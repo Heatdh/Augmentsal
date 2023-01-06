@@ -15,7 +15,8 @@ Our pipleline is mainly divided into:
 3. Train new networks with the augmented images as input and the predicted map by the optimized Net as ground truth saliency
 This can be seen in the following figures:
 ![netopt](readme_figures/netoptpipe.png)
-![augmentopt](readme_figures/augment%20opt.png)
+
+![augmentopt](readme_figures/aug.png)
 
 
 ## Walkthrough 
