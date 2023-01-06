@@ -1,0 +1,25 @@
+2022-12-29 15:26:07,819 INFO    MainThread:257543 [wandb_setup.py:_flush():68] Configure stats pid to 257543
+2022-12-29 15:26:07,819 INFO    MainThread:257543 [wandb_setup.py:_flush():68] Loading settings from /home/dhahri/.config/wandb/settings
+2022-12-29 15:26:07,819 INFO    MainThread:257543 [wandb_setup.py:_flush():68] Loading settings from /data/dhahri/saliency/wandb/settings
+2022-12-29 15:26:07,819 INFO    MainThread:257543 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True'}
+2022-12-29 15:26:07,820 INFO    MainThread:257543 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program_relpath': 'SimpleNet/train_aug_singlecfg.py', 'program': 'SimpleNet/train_aug_singlecfg.py'}
+2022-12-29 15:26:07,820 INFO    MainThread:257543 [wandb_init.py:_log_setup():476] Logging user logs to /data/dhahri/saliency/wandb/run-20221229_152607-3qupej38/logs/debug.log
+2022-12-29 15:26:07,820 INFO    MainThread:257543 [wandb_init.py:_log_setup():477] Logging internal logs to /data/dhahri/saliency/wandb/run-20221229_152607-3qupej38/logs/debug-internal.log
+2022-12-29 15:26:07,820 INFO    MainThread:257543 [wandb_init.py:init():516] calling init triggers
+2022-12-29 15:26:07,820 INFO    MainThread:257543 [wandb_init.py:init():519] wandb.init called with sweep_config: {}
+config: {'no_epochs': 15, 'lr': 0.0001, 'kldiv': True, 'cc': True, 'nss': False, 'sim': False, 'nss_emlnet': False, 'nss_norm': False, 'l1': False, 'lr_sched': True, 'dilation': False, 'enc_model': 'pnas', 'optim': 'Adam', 'load_weight': 1, 'kldiv_coeff': 1.0, 'step_size': 5, 'cc_coeff': -1.0, 'sim_coeff': -1.0, 'nss_coeff': 1.0, 'nss_emlnet_coeff': 1.0, 'nss_norm_coeff': 1.0, 'l1_coeff': 1.0, 'train_enc': 1, 'dataset_dir': 'dataset/', 'batch_size': 32, 'log_interval': 60, 'no_workers': 4, 'model_val_path': 'model_jpeg35.pt', 'train_im': 'jpeg_compression/jpeg_35/images', 'train_maps': 'jpeg_compression/jpeg_35/maps', 'name': 'Jpeg_35'}
+2022-12-29 15:26:07,820 INFO    MainThread:257543 [wandb_init.py:init():569] starting backend
+2022-12-29 15:26:07,820 INFO    MainThread:257543 [wandb_init.py:init():573] setting up manager
+2022-12-29 15:26:07,829 INFO    MainThread:257543 [backend.py:_multiprocessing_setup():102] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2022-12-29 15:26:07,833 INFO    MainThread:257543 [wandb_init.py:init():580] backend started and connected
+2022-12-29 15:26:07,838 INFO    MainThread:257543 [wandb_init.py:init():658] updated telemetry
+2022-12-29 15:26:07,838 INFO    MainThread:257543 [wandb_init.py:init():693] communicating run to backend with 60 second timeout
+2022-12-29 15:26:08,253 INFO    MainThread:257543 [wandb_run.py:_on_init():2006] communicating current version
+2022-12-29 15:26:08,338 INFO    MainThread:257543 [wandb_run.py:_on_init():2010] got version response 
+2022-12-29 15:26:08,338 INFO    MainThread:257543 [wandb_init.py:init():728] starting run threads in backend
+2022-12-29 15:26:13,365 INFO    MainThread:257543 [wandb_run.py:_console_start():1986] atexit reg
+2022-12-29 15:26:13,365 INFO    MainThread:257543 [wandb_run.py:_redirect():1844] redirect: SettingsConsole.WRAP_RAW
+2022-12-29 15:26:13,365 INFO    MainThread:257543 [wandb_run.py:_redirect():1909] Wrapping output streams.
+2022-12-29 15:26:13,365 INFO    MainThread:257543 [wandb_run.py:_redirect():1931] Redirects installed.
+2022-12-29 15:26:13,366 INFO    MainThread:257543 [wandb_init.py:init():765] run started, returning control to user process
+2022-12-29 17:45:59,462 WARNING MsgRouterThr:257543 [router.py:message_loop():77] message_loop has been closed

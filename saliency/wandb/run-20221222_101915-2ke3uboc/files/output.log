@@ -1,0 +1,42 @@
+PNAS Model
+96 96 54
+96 270 108
+270 540 216
+540 1080 216
+1080 1080 216
+1080 1080 216
+1080 1080 432
+1080 2160 432
+2160 2160 432
+2160 2160 432
+2160 2160 864
+2160 4320 864
+4320 4320 864
+4320 4320 864
+---------------- Reached this part --------
+cuda
+Traceback (most recent call last):
+  File "SimpleNet/train_aug_singlecfg.py", line 231, in <module>
+    loss = train(model, optimizer, train_loader, epoch, device, args)
+  File "SimpleNet/train_aug_singlecfg.py", line 61, in train
+    for idx, (img, gt, fixations) in enumerate(loader):
+  File "/home/dhahri/.local/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 517, in __next__
+    data = self._next_data()
+  File "/home/dhahri/.local/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1199, in _next_data
+    return self._process_data(data)
+  File "/home/dhahri/.local/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1225, in _process_data
+    data.reraise()
+  File "/home/dhahri/.local/lib/python3.8/site-packages/torch/_utils.py", line 429, in reraise
+    raise self.exc_type(msg)
+FileNotFoundError: Caught FileNotFoundError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/home/dhahri/.local/lib/python3.8/site-packages/torch/utils/data/_utils/worker.py", line 202, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/home/dhahri/.local/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 44, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/dhahri/.local/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 44, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/data/dhahri/saliency/SimpleNet/dataloader.py", line 32, in __getitem__
+    gt = np.array(Image.open(gt_path).convert('L'))
+  File "/opt/conda/lib/python3.8/site-packages/PIL/Image.py", line 3092, in open
+    fp = builtins.open(filename, "rb")

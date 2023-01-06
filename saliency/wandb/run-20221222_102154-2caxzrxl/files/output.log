@@ -1,0 +1,46 @@
+PNAS Model
+96 96 54
+96 270 108
+270 540 216
+540 1080 216
+1080 1080 216
+1080 1080 216
+1080 1080 432
+1080 2160 432
+2160 2160 432
+2160 2160 432
+2160 2160 864
+2160 4320 864
+4320 4320 864
+4320 4320 864
+---------------- Reached this part --------
+cuda
+[ 0,    59] avg_loss : -0.51890, time:1.036875 minutes
+[ 0,   119] avg_loss : -0.77602, time:2.046158 minutes
+[ 0,   179] avg_loss : -0.81106, time:3.058153 minutes
+[ 0,   239] avg_loss : -0.82704, time:4.072087 minutes
+[ 0,   299] avg_loss : -0.83644, time:5.080683 minutes
+[ 0, train] avg_loss : -0.75729
+Traceback (most recent call last):
+  File "SimpleNet/train_aug_singlecfg.py", line 234, in <module>
+    cc_loss = validate(model, val_loader, epoch, device, args)
+  File "SimpleNet/train_aug_singlecfg.py", line 96, in validate
+    for (img, gt, fixations) in loader:
+  File "/home/dhahri/.local/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 517, in __next__
+    data = self._next_data()
+  File "/home/dhahri/.local/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1199, in _next_data
+    return self._process_data(data)
+  File "/home/dhahri/.local/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1225, in _process_data
+    data.reraise()
+  File "/home/dhahri/.local/lib/python3.8/site-packages/torch/_utils.py", line 429, in reraise
+    raise self.exc_type(msg)
+FileNotFoundError: Caught FileNotFoundError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/home/dhahri/.local/lib/python3.8/site-packages/torch/utils/data/_utils/worker.py", line 202, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/home/dhahri/.local/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 44, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/dhahri/.local/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 44, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/data/dhahri/saliency/SimpleNet/dataloader.py", line 30, in __getitem__
+    img = Image.open(open(img_path, 'rb')).convert('RGB')

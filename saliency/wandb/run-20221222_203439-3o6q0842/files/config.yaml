@@ -1,0 +1,122 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.13.7
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.8.5
+    start_time: 1671741279.38767
+    t:
+      1:
+      - 1
+      - 41
+      - 55
+      2:
+      - 1
+      - 41
+      - 55
+      3:
+      - 13
+      - 14
+      - 16
+      - 23
+      4: 3.8.5
+      5: 0.13.7
+      8:
+      - 5
+batch_size:
+  desc: null
+  value: 32
+cc:
+  desc: null
+  value: true
+cc_coeff:
+  desc: null
+  value: -1.0
+dataset_dir:
+  desc: null
+  value: dataset/
+dilation:
+  desc: null
+  value: false
+enc_model:
+  desc: null
+  value: pnas
+kldiv:
+  desc: null
+  value: true
+kldiv_coeff:
+  desc: null
+  value: 1.0
+l1:
+  desc: null
+  value: false
+l1_coeff:
+  desc: null
+  value: 1.0
+load_weight:
+  desc: null
+  value: 1
+log_interval:
+  desc: null
+  value: 60
+lr:
+  desc: null
+  value: 0.0001
+lr_sched:
+  desc: null
+  value: true
+model_val_path:
+  desc: null
+  value: model_Shearing3.pt
+name:
+  desc: null
+  value: Shearing3
+no_epochs:
+  desc: null
+  value: 15
+no_workers:
+  desc: null
+  value: 4
+nss:
+  desc: null
+  value: false
+nss_coeff:
+  desc: null
+  value: 1.0
+nss_emlnet:
+  desc: null
+  value: false
+nss_emlnet_coeff:
+  desc: null
+  value: 1.0
+nss_norm:
+  desc: null
+  value: false
+nss_norm_coeff:
+  desc: null
+  value: 1.0
+optim:
+  desc: null
+  value: Adam
+sim:
+  desc: null
+  value: false
+sim_coeff:
+  desc: null
+  value: -1.0
+step_size:
+  desc: null
+  value: 5
+train_enc:
+  desc: null
+  value: 1
+train_im:
+  desc: null
+  value: augmented/images/Shearing3
+train_maps:
+  desc: null
+  value: augmented/maps/Shearing3

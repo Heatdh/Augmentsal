@@ -1,0 +1,132 @@
+PNAS Model
+96 96 54
+96 270 108
+270 540 216
+540 1080 216
+1080 1080 216
+1080 1080 216
+1080 1080 432
+1080 2160 432
+2160 2160 432
+2160 2160 432
+2160 2160 864
+2160 4320 864
+4320 4320 864
+4320 4320 864
+---------------- Reached this part --------
+cuda
+[ 0,    59] avg_loss : -0.60716, time:1.065136 minutes
+[ 0,   119] avg_loss : -0.83719, time:2.094063 minutes
+[ 0,   179] avg_loss : -0.86314, time:3.126476 minutes
+[ 0,   239] avg_loss : -0.87194, time:4.158171 minutes
+[ 0,   299] avg_loss : -0.88368, time:5.190133 minutes
+[ 0, train] avg_loss : -0.81568
+[ 0,   val] CC : 0.90133, KLDIV : 0.21749, NSS : 1.66780, SIM : 0.78224  time:4.064665 minutes
+[ 0,  save, model_jpeg10.pt]
+[ 1,    59] avg_loss : -0.93410, time:1.040426 minutes
+[ 1,   119] avg_loss : -0.93881, time:2.068957 minutes
+[ 1,   179] avg_loss : -0.93977, time:3.090956 minutes
+[ 1,   239] avg_loss : -0.94307, time:4.127060 minutes
+[ 1,   299] avg_loss : -0.93806, time:5.148248 minutes
+[ 1, train] avg_loss : -0.93876
+[ 1,   val] CC : 0.90063, KLDIV : 0.21845, NSS : 1.66458, SIM : 0.78241  time:4.061819 minutes
+[ 2,    59] avg_loss : -0.96436, time:1.040226 minutes
+[ 2,   119] avg_loss : -0.96921, time:2.062872 minutes
+[ 2,   179] avg_loss : -0.96589, time:3.093510 minutes
+[ 2,   239] avg_loss : -0.96939, time:4.123126 minutes
+[ 2,   299] avg_loss : -0.96951, time:5.154042 minutes
+[ 2, train] avg_loss : -0.96765
+[ 2,   val] CC : 0.90505, KLDIV : 0.20226, NSS : 1.67761, SIM : 0.79366  time:4.083210 minutes
+[ 2,  save, model_jpeg10.pt]
+[ 3,    59] avg_loss : -0.97789, time:1.052529 minutes
+[ 3,   119] avg_loss : -0.97943, time:2.086863 minutes
+[ 3,   179] avg_loss : -0.97665, time:3.117822 minutes
+[ 3,   239] avg_loss : -0.97680, time:4.152234 minutes
+[ 3,   299] avg_loss : -0.97803, time:5.187494 minutes
+[ 3, train] avg_loss : -0.97765
+[ 3,   val] CC : 0.90526, KLDIV : 0.21514, NSS : 1.67461, SIM : 0.78878  time:4.175179 minutes
+[ 3,  save, model_jpeg10.pt]
+[ 4,    59] avg_loss : -0.98014, time:1.038232 minutes
+[ 4,   119] avg_loss : -0.98026, time:2.063408 minutes
+[ 4,   179] avg_loss : -0.98047, time:3.089581 minutes
+[ 4,   239] avg_loss : -0.98031, time:4.115695 minutes
+[ 4,   299] avg_loss : -0.98104, time:5.145127 minutes
+[ 4, train] avg_loss : -0.98041
+[ 4,   val] CC : 0.90770, KLDIV : 0.20369, NSS : 1.68079, SIM : 0.79581  time:4.110111 minutes
+[ 4,  save, model_jpeg10.pt]
+[ 5,    59] avg_loss : -0.98538, time:1.036897 minutes
+[ 5,   119] avg_loss : -0.98623, time:2.060509 minutes
+[ 5,   179] avg_loss : -0.98663, time:3.090527 minutes
+[ 5,   239] avg_loss : -0.98747, time:4.117652 minutes
+[ 5,   299] avg_loss : -0.98703, time:5.145651 minutes
+[ 5, train] avg_loss : -0.98660
+[ 5,   val] CC : 0.90864, KLDIV : 0.19648, NSS : 1.68299, SIM : 0.79817  time:3.992048 minutes
+[ 5,  save, model_jpeg10.pt]
+[ 6,    59] avg_loss : -0.98948, time:1.032183 minutes
+[ 6,   119] avg_loss : -0.98931, time:2.053829 minutes
+[ 6,   179] avg_loss : -0.98967, time:3.077784 minutes
+[ 6,   239] avg_loss : -0.98970, time:4.107854 minutes
+[ 6,   299] avg_loss : -0.98928, time:5.128084 minutes
+[ 6, train] avg_loss : -0.98951
+[ 6,   val] CC : 0.90886, KLDIV : 0.19780, NSS : 1.68299, SIM : 0.79769  time:3.953983 minutes
+[ 6,  save, model_jpeg10.pt]
+[ 7,    59] avg_loss : -0.99126, time:1.041257 minutes
+[ 7,   119] avg_loss : -0.99106, time:2.074768 minutes
+[ 7,   179] avg_loss : -0.99112, time:3.107008 minutes
+[ 7,   239] avg_loss : -0.99150, time:4.138584 minutes
+[ 7,   299] avg_loss : -0.99061, time:5.170608 minutes
+[ 7, train] avg_loss : -0.99107
+[ 7,   val] CC : 0.90888, KLDIV : 0.19876, NSS : 1.68303, SIM : 0.79729  time:4.061253 minutes
+[ 7,  save, model_jpeg10.pt]
+[ 8,    59] avg_loss : -0.99242, time:1.038436 minutes
+[ 8,   119] avg_loss : -0.99198, time:2.065366 minutes
+[ 8,   179] avg_loss : -0.99230, time:3.096023 minutes
+[ 8,   239] avg_loss : -0.99236, time:4.122944 minutes
+[ 8,   299] avg_loss : -0.99234, time:5.149885 minutes
+[ 8, train] avg_loss : -0.99229
+[ 8,   val] CC : 0.90883, KLDIV : 0.19903, NSS : 1.68275, SIM : 0.79744  time:4.015304 minutes
+[ 9,    59] avg_loss : -0.99362, time:1.037248 minutes
+[ 9,   119] avg_loss : -0.99310, time:2.055841 minutes
+[ 9,   179] avg_loss : -0.99326, time:3.075062 minutes
+[ 9,   239] avg_loss : -0.99327, time:4.098083 minutes
+[ 9,   299] avg_loss : -0.99318, time:5.125121 minutes
+[ 9, train] avg_loss : -0.99328
+[ 9,   val] CC : 0.90889, KLDIV : 0.19930, NSS : 1.68278, SIM : 0.79727  time:4.065289 minutes
+[ 9,  save, model_jpeg10.pt]
+[10,    59] avg_loss : -0.99423, time:1.035244 minutes
+[10,   119] avg_loss : -0.99430, time:2.062210 minutes
+[10,   179] avg_loss : -0.99409, time:3.082724 minutes
+[10,   239] avg_loss : -0.99407, time:4.105484 minutes
+[10,   299] avg_loss : -0.99408, time:5.129636 minutes
+[10, train] avg_loss : -0.99414
+[10,   val] CC : 0.90894, KLDIV : 0.19878, NSS : 1.68308, SIM : 0.79786  time:4.049808 minutes
+[10,  save, model_jpeg10.pt]
+[11,    59] avg_loss : -0.99423, time:1.035789 minutes
+[11,   119] avg_loss : -0.99417, time:2.056599 minutes
+[11,   179] avg_loss : -0.99432, time:3.073471 minutes
+[11,   239] avg_loss : -0.99443, time:4.096949 minutes
+[11,   299] avg_loss : -0.99436, time:5.116420 minutes
+[11, train] avg_loss : -0.99429
+[11,   val] CC : 0.90890, KLDIV : 0.19822, NSS : 1.68317, SIM : 0.79806  time:4.036153 minutes
+[12,    59] avg_loss : -0.99413, time:1.044088 minutes
+[12,   119] avg_loss : -0.99426, time:2.068720 minutes
+[12,   179] avg_loss : -0.99439, time:3.092562 minutes
+[12,   239] avg_loss : -0.99453, time:4.112857 minutes
+[12,   299] avg_loss : -0.99433, time:5.131727 minutes
+[12, train] avg_loss : -0.99433
+[12,   val] CC : 0.90898, KLDIV : 0.19830, NSS : 1.68318, SIM : 0.79797  time:4.064888 minutes
+[12,  save, model_jpeg10.pt]
+[13,    59] avg_loss : -0.99459, time:1.033836 minutes
+[13,   119] avg_loss : -0.99430, time:2.053756 minutes
+[13,   179] avg_loss : -0.99444, time:3.078543 minutes
+[13,   239] avg_loss : -0.99434, time:4.092813 minutes
+[13,   299] avg_loss : -0.99456, time:5.113326 minutes
+[13, train] avg_loss : -0.99442
+[13,   val] CC : 0.90894, KLDIV : 0.19818, NSS : 1.68322, SIM : 0.79809  time:4.038764 minutes
+[14,    59] avg_loss : -0.99434, time:1.048898 minutes
+[14,   119] avg_loss : -0.99456, time:2.077537 minutes
+[14,   179] avg_loss : -0.99463, time:3.101224 minutes
+[14,   239] avg_loss : -0.99465, time:4.117879 minutes
+[14,   299] avg_loss : -0.99455, time:5.142492 minutes
+[14, train] avg_loss : -0.99455
+[14,   val] CC : 0.90879, KLDIV : 0.19851, NSS : 1.68285, SIM : 0.79751  time:3.988148 minutes
