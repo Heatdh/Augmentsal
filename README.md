@@ -18,3 +18,40 @@ This can be seen in the following figures:
 ![augment%20opt.png](readme_figures/netoptpipe.png)
 
 
+## Walkthrough 
+It is important to mention that in this repositroy, we provide with the notebooks and python scrips to generate the augmented data and the correspondive maps, as well as the visualization. 
+All the generated data and saved models are saved in the **drive** under the directory **dhahri**. 
+
+### Data preparation
+Download the [SALICON](http://salicon.net/challenge-2017/) except the maps and place the zips in this hiearchy: 
+
+```
+└── Dataset  
+    ├── fixations  
+    │   ├── train  
+    │   └── val  
+    ├── images  
+    │   ├── train  
+    │   └── val  
+    ├── maps  
+        ├── train  
+        └── val  
+```
+We host the maps as pngs instead of matlab arrays and the pretrained PNASNet-5 weights under the [link](https://drive.google.com/drive/folders/1HzpXVcO7rWJT3hX_u-4SLHwJKuvdyFLC?usp=sharing)
+
+### Optimizing the Network 
+Place the PNASNet-5 weights inside [saliency/PNAS](saliency/PNAS) directory and use [our experiment controller](saliency/SimpleNet/experiment.py) to optimize the network using different config files. 
+An example of [config file](saliency/cfgs/testbenchmark_1.json) 
+
+### Augmenting the data, generate maps and Train
+To execute the 18 augmentations proposed use the [aug_dir.py](saliency/aug_dir.py) script and use the network from the previous step to generate the map (For internal EPFL staff please refer to the mounted files on the cluster)
+Once we have the images and the maps, we train for each transformation for 15 epochs
+
+The notebook [hyper_augment.ipynb](notebooks/hyper_augment.ipynb) contains the details about generating data for JPEG Compression experiment and the analysis.
+
+### Analysis 
+The analysis are represend in the notebooks and the paper. 
+**PS**: the notebooks containing train is for ressource managment and training using different pods and are not relevant for externals
+
+## Refrences
+Navyasri Reddy, Samyak Jain, Pradeep Yarlagadda, and Vineet Gandhi. "Tidying Deep Saliency Prediction Architectures." CoRR, abs/2003.04942, 2020. https://arxiv.org/abs/2003.04942.
